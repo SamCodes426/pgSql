@@ -1,0 +1,6 @@
+what is PostgreSQL
+Ans:PostgreSQL is a powerful, open-source object-relational database management system (ORDBMS)
+
+> PostgreSQL has a rich history and is a highly extensible and reliable database system.
+> open-source with a broad community of contributors.
+> continues to evolve with modern features for diverse applications.
