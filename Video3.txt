@@ -1,0 +1,3 @@
+create table emp(id numeric , name char(20));
+
+shortcut for creating database ---->   alt + shift + n
