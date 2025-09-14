@@ -1,0 +1,23 @@
+Two tyopes of generated columns in postgreSql
+> stored
+> virtual
+
+
+STORED
+
+    create table people(
+    height_cm numeric,
+    height_in numeric generated always as (height_cm/2.54) stored           (when we uodate any value in "height_cm" then automatically the height_in will be updated)
+    );
+
+
+VIRTUAL IS NOT SUPPORTED AS OF NOW
+
+==============================================================
+
+updating the values 
+
+update people set height_cm = 200 where height_cm = 180;
+
+
+insert into people (height_cm,height_in) values (200,78.74);        (THIS WILL THROW AN ERROR BECAUSE THE GENERATED AS ALWAYS IS CONVERTING THE VALUES OF height_cm into height_in AND WE ARE ALSO TRYING TO GIVE VALUES )
