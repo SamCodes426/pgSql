@@ -1,0 +1,13 @@
+How to set the binary path
+
+if the backup fails try setting up the binary path
+
+> click on file
+> click on preferences
+> search for binary path in the path dropdown
+> locate your version
+> set the path
+
+ALL SET !
+
+https://www.youtube.com/watch?v=Glb1UJ5NdQ4&list=PLSU32T6nmU25qowhWMM4ZUDUbSvsV78GG&index=6         (video reference for setting the binary path)
