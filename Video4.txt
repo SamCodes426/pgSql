@@ -1,0 +1,6 @@
+How to restore a database
+
+> right click on database
+> click on restore
+> choose the file from the system that you want to restore
+> click on restore 
