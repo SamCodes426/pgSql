@@ -1,0 +1,23 @@
+Properties of a table
+
+250 - 1600 columns can only be made (it is the limit)
+columns name must be unique
+columns will be fixed in a table but rows will not be fixed the table will grow vertically
+column must have a datatype
+
+
+> creating a table
+
+CREATE TABLE my_first_table(
+    first_column text,
+    second column integer
+);
+
+> display the table
+
+SELECT * FROM my_first_table;
+
+> drop the table
+
+DROP TABLE IF EXISTS my_first_table;    ( we use IF EXISTS so that if the table is already not there , so it wont throw the error )
+
