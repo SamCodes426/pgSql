@@ -1,0 +1,16 @@
+How to backup a file
+
+> right click on database
+> click on backup
+> choose the location where u want to save the file
+> choose the format
+> click on backup
+
+
+extension       format
+
+
+.tar    --->     tar
+.backup --->    custom
+.sql    --->    plain
+ 
