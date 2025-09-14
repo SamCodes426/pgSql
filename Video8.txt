@@ -1,0 +1,35 @@
+what is a default value
+
+if we doesnt give any value to the column we can set its default value at the time of table creation 
+otherwise the default value of empty cell is null
+
+create table products(
+product_no integer,
+name text,
+price numeric default 9.99,                         (the default price is set to 9.99)
+addedon timestamp default current_timestamp         (similarly the time is also set default of the current table creation)
+ ); 
+
+
+ setting default sequence 
+
+>   create sequence product_no as integer;
+
+>   create table products2(
+    product_no integer default nextval('product_no'),
+    name text,
+    price numeric default 9.99,
+    addedon timestamp default current_timestamp
+    ); 
+
+
+setting the serial for the serial numbers           (does the same task as sequence but much more easy)       
+
+create table products3(
+product_no serial,
+name text,
+price numeric default 9.99,
+addedon timestamp default current_timestamp
+ );
+
+ 
