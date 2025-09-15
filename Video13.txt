@@ -1,0 +1,14 @@
+=========================================== NOT NULL CONSTRAINTS =========================================
+
+
+create table products100(
+product_no integer not null,
+name text not null,
+price numeric 
+);
+
+
+
+HERE product_no and name can not be null
+
+majority number of columns should be not null
