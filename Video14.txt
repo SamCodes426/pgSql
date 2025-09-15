@@ -1,0 +1,47 @@
+============================== UNIQUE CONSTRAINTS ======================================
+
+
+                            create table products100(
+                            product_no integer unique,
+                            name text ,
+                            price numeric 
+                            );
+
+
+ANOTHER TYPE TO APPLY CONSTRAINTS
+
+CREATE TABLE example(
+a integer,
+b integer,
+c integer,
+unique(a,c)
+);
+
+
+properties of unique key constraints
+
+
+> a unique key constraint automatically creates a unique b tree index on the specified columns
+> however, if a uniqueness condition applies only to certain rows,
+> it can be enforced using a unique partial index rather than a unique constraint.
+> a unique constraint is voilated if multiple rows have identical values in all constraint columns.
+
+> by default , two nulls are not treated as equal , allowing duplicate rows with nulls in constrained columns.
+> this behaviour can be modified by using the NULLS NOT DISTINCT clause to treat nulls as equal.
+
+
+CREATE TABLE products(
+product_no integer unique nulls not distinct,           ( by default , two nulls are not treated as equal , allowing duplicate rows with nulls in constrained columns.                                                        this behaviour can be modified by using the NULLS NOT DISTINCT clause to treat nulls as equal.)
+name text,
+price numeric
+);
+
+
+
+NULLS DISTINCT does the opposite of NULLS NOT DISTINCT
+
+CREATE TABLE products(
+product_no integer unique nulls distinct,
+name text,
+price numeric
+);
