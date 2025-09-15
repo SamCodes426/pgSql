@@ -1,0 +1,48 @@
+============================================ PRIMARY KEY CONSTRAINTS =====================================================
+
+CREATE TABLE products(
+product_no integer PRIMARY KEY,
+name text,
+price numeric
+);
+
+
+PRIMARY KEY will not store the null value and it has to be always UNIQUE
+
+
+
+
+
+PRIMARY KEY constraint using multiple columns
+
+CREATE TABLE example(
+a integer,
+b integer,
+c integer,
+PRIMARY KEY(a,c)
+);
+
+
+
+PRIMARY KEY features
+
+> adding a primary key creates a unique B-tree index automatically.
+> the primary key columns are forced to be not null.
+
+
+TABLE CONSTRAINTS: 
+
+> a table can have only one primary key.
+multiple unique and not null constraints are allowd, but only one can defined as the primary key.
+
+BEST PRACTICES: 
+
+realational databese theory recommends every table have a primary key for data integrity.
+postgreSql does not enforce this rule, but it is generally good prcatice to follow.
+
+
+USAGE AND BENEFITS: 
+> PRIMARY KEY help document table structures .
+essential for client applications (e.g., GUIs) to uniquely identify and modify rows .
+used by the database for features like defining default target columns for foreign key references .
+
