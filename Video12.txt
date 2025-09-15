@@ -1,0 +1,29 @@
+========================== CHECK CONSTRAINTS =============================
+
+                     
+                     
+                     
+                        create table products100(
+                        product_no integer,
+                        name text,
+                        price numeric check (price>0)
+                        );
+
+
+                       
+                       
+                        create table products100(
+                        product_no integer,
+                        name text,
+                        price numeric check (price>0),                                  (column constraints)
+                        discounted_price numeric check (discounted_price > 0),          (column constraints)
+                        check (price > discounted_price)                                (table constraints)
+                        );
+
+
+
+                        create table products100(
+                        product_no integer,
+                        name text not null,
+                        price numeric not null check (price>0)
+                        );
