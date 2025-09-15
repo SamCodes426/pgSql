@@ -1,0 +1,10 @@
+constraining the values 
+for example ---> constraining the user to put negative value as the price of a pen
+
+types of constraints
+
+> check constraints     (check the kind of value we are providing)
+> not-null constraints  (restricts the null cell)
+> unique constraints    (makes sure if the value is unique everytime)
+> primary keys          (combination of not-null and unique)
+> foriegn keys          (to maintain the data integrity among the tables)
